@@ -1,0 +1,27 @@
+{
+  "tags":[
+
+  ],
+  "query":"avg(last_5m):avg:datadog_metric_prefixp_rabbitmq.p_rabbitmq_service_broker_heartbeat{ip:instance_ip} < 1",
+  "message":"Hello,\n\nPlease do a ssh login using vcap user by getting credentials from ops manager.\n$ssh vcap@instance_ip \n\n$sudo su\n\n$ monit summary - Check if all process are running\n\nIf you don't see any process being not monitored or execution failed then please callup PCF on-call person @pcf.operations@nbcuni.com",
+  "name":"Rabbit MQ Broker instance_ip Heartbeat environment_name",
+  "type":"metric alert",
+  "options":{
+    "notify_audit":false,
+    "locked":false,
+    "timeout_h":0,
+    "silenced":{
+
+    },
+    "thresholds":{
+      "critical":1.0
+    },
+    "new_host_delay":300,
+    "require_full_window":true,
+    "notify_no_data":false,
+    "renotify_interval":30,
+    "evaluation_delay":"",
+    "escalation_message":"Please contact Kenny Guzman(kenny.guzman@nbcuni.com) incase the issue is not resolved.",
+    "no_data_timeframe":10
+  }
+}

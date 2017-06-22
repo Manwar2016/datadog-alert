@@ -1,0 +1,101 @@
+---
+datadog_api_key: "27afXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+datadog_app_key: "39ab6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+datadog_metric_prefix: "labsysash.datadog.nozzle."
+environment_name: "LabASH"
+cf_deployment: "cf-434cf79de63d96f12883"
+rabbit_deployment: "p-rabbitmq-9385e61d96c58c166c48"
+redis_deployment: "p-redis-3f8213c3344fe9ebff7a"
+mysql_deployment: "p-mysql-4bb233aae94e4ff701d3"
+ert:
+  consul_server:
+    0: 100.126.17.11
+    1: 100.126.17.12
+    2: 100.126.17.13
+  nats:
+    0: 100.126.17.14
+    1: 100.126.17.15
+    2: 100.126.17.16
+  etcd_tls_server:
+    0: 100.126.17.17
+  etcd_server:
+    0: 100.126.17.18
+  nfs_server:
+    0: 100.126.17.19
+  mysql_proxy:
+    0: 100.126.17.20
+  mysql:
+    0: 100.126.17.21
+  uaa:
+    0: 100.126.17.22
+    1: 100.126.17.23
+    2: 100.126.17.24
+  cloud_controller:
+    0: 100.126.17.25
+    1: 100.126.17.26
+    2: 100.126.17.27
+  router:
+    0: 100.126.17.250
+    1: 100.126.17.251
+    2: 100.126.17.252
+    3: 100.126.17.253
+  mysql_monitor:
+    0: 100.126.17.28
+  clock_global:
+    0: 100.126.17.29
+  cloud_controller_worker:
+    0: 100.126.17.30
+  diego_database:
+    0: 100.126.17.31
+    1: 100.126.17.32
+    2: 100.126.17.33
+  diego_brain:
+    0: 100.126.17.34
+    1: 100.126.17.35
+    2: 100.126.17.36
+  diego_cell:
+    0: 100.126.17.37
+    1: 100.126.17.40
+    2: 100.126.17.43
+    3: 100.126.17.38
+    4: 100.126.17.42
+    5: 100.126.17.44
+    6: 100.126.17.39
+    7: 100.126.17.41
+  doppler:
+    0: 100.126.17.45
+    1: 100.126.17.46
+    2: 100.126.17.47
+  loggregator_trafficcontroller:
+    0: 100.126.17.48
+    1: 100.126.17.49
+    2: 100.126.17.50
+rabbitmq:
+  rabbitmq-server:
+    0: 100.126.52.14
+    1: 100.126.52.15
+    2: 100.126.52.68
+  rabbitmq-haproxy:
+    0: 100.126.52.16
+  rabbitmq-broker:
+    0: 100.126.52.17
+redis:
+  cf-redis-broker:
+    0: 100.126.52.45
+  dedicated-node:
+    0: 100.126.52.46
+    1: 100.126.52.47
+    2: 100.126.52.48
+    3: 100.126.52.49
+    4: 100.126.52.50
+mysql:
+  mysql:
+    0: 100.126.52.24
+    1: 100.126.52.25
+    2: 100.126.52.26
+  proxy:
+    0: 100.126.52.27
+    1: 100.126.52.28
+  cf-mysql-broker:
+    0: 100.126.52.11
+    1: 100.126.52.12
